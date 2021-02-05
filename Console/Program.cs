@@ -2,7 +2,7 @@
 using DataAccess.Concrete;
 using System;
 
-namespace Console
+namespace ConsoleUI
 {
     class Program
     {
@@ -13,7 +13,7 @@ namespace Console
 
             foreach (var c in carManager.GetAll())
             {
-                System.Console.WriteLine(c.Description);
+                System.Console.WriteLine(c.Description+ " " + c.DailyPrice);
             }
             
         }

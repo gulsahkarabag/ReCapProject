@@ -37,9 +37,9 @@ namespace DataAccess.Concrete
             return _cars;
         }
 
-        public List<Car> GetById(int brandId)
+        public List<Car> GetById(int carId)
         {
-            return _cars.Where(c => c.BrandId == brandId).ToList();
+            return _cars.Where(c => c.CarId == carId).ToList();
         } 
 
         public void Update(Car car)
